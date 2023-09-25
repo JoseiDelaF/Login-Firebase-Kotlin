@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:textSize="26dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="328dp">
+
+        <ImageView
+            android:id="@+id/iv_fotoPerfil"
+            android:layout_width="357dp"
+            android:layout_height="268dp"
+            android:src="@drawable/baseline_add_a_photo_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="30dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_nombreLogin"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textAlignment="center"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_emailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:textAlignment="center"
+        android:textColorLink="#673AB7"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_nombreLogin"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:hint="INGRESA TU NOMBRE"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_guardarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:text="Guardar" />
+
+
+</LinearLayout>
